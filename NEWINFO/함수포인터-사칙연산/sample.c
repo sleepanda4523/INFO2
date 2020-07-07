@@ -31,6 +31,7 @@ int main()
 		fp[3](ndata.a, ndata.b);
 		break;
 	default:
+		printf("사칙연산이 아닙니다..!\n");
 		break;
 	}
 	return 0;
