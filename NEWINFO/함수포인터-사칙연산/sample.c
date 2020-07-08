@@ -28,7 +28,12 @@ int main()
 		printf("%.4lf\n", fp[2](ndata.a, ndata.b));
 		break;
 	case '/':
-		printf("%.4lf\n", fp[3](ndata.a, ndata.b));
+		if (ndata.b == 0) {
+			printf("계산할 수 없습니다!\n");
+		}
+		else {
+			printf("%.4lf\n", fp[3](ndata.a, ndata.b));
+		}
 		break;
 	default:
 		printf("사칙연산이 아닙니다..!\n");
@@ -50,10 +55,5 @@ double mul(double a, double b)
 }
 double div(double a, double b)
 {
-	if (b == 0) {
-		printf("계산할 수 없습니다!\n");
-	}
-	else {
 		return a / b;
-	}
 }
