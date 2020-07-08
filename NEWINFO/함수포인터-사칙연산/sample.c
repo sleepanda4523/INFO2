@@ -54,6 +54,6 @@ void div(double a, double b)
 		printf("계산할 수 없습니다!\n");
 	}
 	else {
-		printf("%.4lf\n", a + b);
+		printf("%.4lf\n", a / b);
 	}
 }
